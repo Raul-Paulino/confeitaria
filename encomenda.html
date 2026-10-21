@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça sua Encomenda - Meel Confeitaria</title>
+    
+    <!-- Ícone da Aba (Favicon) -->
+    <link rel="icon" type="image/png" href="static/img/logo-header.png">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Folha de Estilos CSS -->
+    <link rel="stylesheet" href="static/css/estilo.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO (HEADER) -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="static/img/logo-header.png" alt="Confeitaria"></a>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">A Confeitaria</a>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">Bolos ▾</a>
+                    <div class="dropdown-content">
+                        <a href="produtos.html">Bolos de Aniversário</a>
+                        <a href="produtos.html">Bolos Caseiros</a>
+                        <a href="produtos.html">Rocamboles</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">Tortas ▾</a>
+                    <div class="dropdown-content">
+                        <a href="produtos.html">Torta de Ricota</a>
+                        <a href="produtos.html">Torta Holandesa</a>
+                        <a href="produtos.html">Torta de Limão</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">Sobremesas ▾</a>
+                    <div class="dropdown-content">
+                        <a href="produtos.html">Pudins</a>
+                        <a href="produtos.html">Mousses</a>
+                        <a href="produtos.html">Pavês</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">Outros ▾</a>
+                    <div class="dropdown-content">
+                        <a href="produtos.html">Trufas & Bombons</a>
+                        <a href="produtos.html">Donuts</a>
+                        <a href="produtos.html">Docinhos de Festa</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-right">
+                <a href="produtos.html" class="btn-produtos">Nossos produtos ▸</a>
+                <div class="icones-topo">
+                    <img src="static/img/lupa.svg" alt="Pesquisar">
+                    <img src="static/img/carrinho.svg" alt="Carrinho">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PÁGINA DE ENCOMENDAS -->
+    <main class="encomenda-container">
+        <section class="encomenda-header">
+            <span class="badge">Pedidos Especiais</span>
+            <h1>FAÇA SUA ENCOMENDA</h1>
+            <p>Preencha os detalhes da sua festa ou evento e monte um pedido personalizado conosco!</p>
+        </section>
+
+        <section class="encomenda-form-wrapper">
+            <form id="form-encomenda" class="form-encomenda">
+                <div class="form-group">
+                    <label for="nome">Seu Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Ex: Raul Paulino" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="whatsapp">Seu WhatsApp:</label>
+                        <input type="tel" id="whatsapp" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data do Evento:</label>
+                        <input type="date" id="data" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-evento">Tipo de Evento:</label>
+                    <select id="tipo-evento" required>
+                        <option value="">Selecione...</option>
+                        <option value="Aniversário">Aniversário</option>
+                        <option value="Casamento">Casamento / Noivado</option>
+                        <option value="Corporativo">Evento Corporativo</option>
+                        <option value="Reunião Familiar">Reunião / Café em Família</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="produtos">Produtos Desejados:</label>
+                    <textarea id="produtos" rows="3" placeholder="Ex: 1 Bolo de Chocolate com Morango (2kg), 50 Docinhos de Festa e 1 Torta de Ricota" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="observacoes">Observações / Restrições Alimentares / Decoração:</label>
+                    <textarea id="observacoes" rows="3" placeholder="Ex: Sem lactose, decoração na cor dourada, etc."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar-encomenda">📱 Enviar Pedido via WhatsApp ▸</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>CONFEITARIA</h3>
+                <p>A melhor experiência em confeitaria artesanal. Tradição, qualidade e carinho em cada detalhe.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">A Confeitaria</a></li>
+                    <li><a href="produtos.html">Nossos Produtos</a></li>
+                    <li><a href="encomenda.html">Encomendas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <p>📍 Av. Principal, 1000 - Centro</p>
+                <p>📞 (11) 99999-8888</p>
+                <p>✉️ contato@confeitaria.com.br</p>
+                <p>⏰ Ter - Dom: 09h às 19h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Confeitaria. Todos os direitos reservados. Desenvolvido por Raul Paulino.</p>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

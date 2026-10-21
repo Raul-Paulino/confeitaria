@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Produtos - Confeitaria</title>
+    
+    <!-- Ícone da Aba (Favicon) -->
+    <link rel="icon" type="image/png" href="static/img/logo-header.png">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Folha de Estilos CSS -->
+    <link rel="stylesheet" href="static/css/estilo.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO (HEADER) -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="static/img/logo-header.png" alt="Confeitaria"></a>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">A Confeitaria</a>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">Bolos ▾</a>
+                    <div class="dropdown-content">
+                        <a href="produtos.html">Bolos de Aniversário</a>
+                        <a href="produtos.html">Bolos Caseiros</a>
+                        <a href="produtos.html">Rocamboles</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">Tortas ▾</a>
+                    <div class="dropdown-content">
+                        <a href="produtos.html">Torta de Ricota</a>
+                        <a href="produtos.html">Torta Holandesa</a>
+                        <a href="produtos.html">Torta de Limão</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">Sobremesas ▾</a>
+                    <div class="dropdown-content">
+                        <a href="produtos.html">Pudins</a>
+                        <a href="produtos.html">Mousses</a>
+                        <a href="produtos.html">Pavês</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-btn">Outros ▾</a>
+                    <div class="dropdown-content">
+                        <a href="produtos.html">Trufas & Bombons</a>
+                        <a href="produtos.html">Donuts</a>
+                        <a href="produtos.html">Docinhos de Festa</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-right">
+                <a href="produtos.html" class="btn-produtos active-btn">Nossos produtos ▸</a>
+                <div class="icones-topo">
+                    <img src="static/img/lupa.svg" alt="Pesquisar">
+                    <img src="static/img/carrinho.svg" alt="Carrinho">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PÁGINA CATÁLOGO -->
+    <main class="catalogo-container">
+        <section class="catalogo-header">
+            <span class="badge">Cardápio Exclusivo</span>
+            <h1>CATÁLOGO DE DELÍCIAS</h1>
+            <p>Explore nossas criações artesanais. Escolha seus favoritos e faça seu pedido!</p>
+
+            <!-- Filtros de Categoria -->
+            <div class="filtros-categorias">
+                <button class="btn-filtro active">Todos</button>
+                <button class="btn-filtro">Sobremesas</button>
+                <button class="btn-filtro">Bolos & Especiais</button>
+                <button class="btn-filtro">Chocolates</button>
+                <button class="btn-filtro">Doces</button>
+                <button class="btn-filtro">Tortas</button>
+            </div>
+        </section>
+
+        <!-- Grade do Catálogo Completo -->
+        <section class="grid-produtos">
+            <div class="produto-card">
+                <img src="static/img/pudim.jpg" alt="Pudim Tradicional">
+                <span class="tag-categoria">Sobremesas</span>
+                <h3>Pudim Tradicional</h3>
+                <div class="avaliacao">⭐⭐⭐⭐⭐ (5.0)</div>
+                <div class="preco">R$ 420,00</div>
+                <button class="btn-detalhes">+ Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="static/img/rocambole-1.jpg" alt="Rocambole Prestígio">
+                <span class="tag-categoria">Bolos & Especiais</span>
+                <h3>Rocambole Prestígio</h3>
+                <div class="avaliacao">⭐⭐⭐⭐⭐ (4.9)</div>
+                <div class="preco">R$ 980,00</div>
+                <button class="btn-detalhes">+ Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="static/img/rocambole-2.jpg" alt="Rocambole Doce de Leite">
+                <span class="tag-categoria">Bolos & Especiais</span>
+                <h3>Rocambole Doce de Leite</h3>
+                <div class="avaliacao">⭐⭐⭐⭐⭐ (4.8)</div>
+                <div class="preco">R$ 780,00</div>
+                <button class="btn-detalhes">+ Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="static/img/trufas.jpg" alt="Trufas Sortidas">
+                <span class="tag-categoria">Chocolates</span>
+                <h3>Trufas Sortidas (Caixa)</h3>
+                <div class="avaliacao">⭐⭐⭐⭐⭐ (5.0)</div>
+                <div class="preco">R$ 500,00</div>
+                <button class="btn-detalhes">+ Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="static/img/bombons.jpg" alt="Bombons Finos">
+                <span class="tag-categoria">Chocolates</span>
+                <h3>Bombons Finos Selecionados</h3>
+                <div class="avaliacao">⭐⭐⭐⭐⭐ (4.9)</div>
+                <div class="preco">R$ 150,00</div>
+                <button class="btn-detalhes">+ Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="static/img/donuts.jpg" alt="Donuts Especiais">
+                <span class="tag-categoria">Doces</span>
+                <h3>Donuts Recheados</h3>
+                <div class="avaliacao">⭐⭐⭐⭐⭐ (4.7)</div>
+                <div class="preco">R$ 450,00</div>
+                <button class="btn-detalhes">+ Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="static/img/doces.jpg" alt="Docinhos de Festa">
+                <span class="tag-categoria">Doces</span>
+                <h3>Cento de Docinhos de Festa</h3>
+                <div class="avaliacao">⭐⭐⭐⭐⭐ (5.0)</div>
+                <div class="preco">R$ 1.200,00</div>
+                <button class="btn-detalhes">+ Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="static/img/torta-de-ricota.jpg" alt="Torta de Ricota">
+                <span class="tag-categoria">Tortas</span>
+                <h3>Torta de Ricota com Calda</h3>
+                <div class="avaliacao">⭐⭐⭐⭐⭐ (4.9)</div>
+                <div class="preco">R$ 1.500,00</div>
+                <button class="btn-detalhes">+ Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <!-- Banner de Encomenda Personalizada -->
+        <section class="banner-encomenda">
+            <div class="encomenda-texto">
+                <h2>Quer um Bolo Personalizado para sua Festas?</h2>
+                <p>Montamos bolos temáticos, tortas sob medida e kits corporativos exclusivos.</p>
+                <a href="#" class="btn-laranja btn-whatsapp">Falar com Atendente no WhatsApp ▸</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>CONFEITARIA</h3>
+                <p>A melhor experiência em confeitaria artesanal. Tradição, qualidade e carinho em cada detalhe.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">A Confeitaria</a></li>
+                    <li><a href="produtos.html">Nossos Produtos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <p>📍 Av. Principal, 1000 - Centro</p>
+                <p>📞 (11) 99999-8888</p>
+                <p>✉️ contato@confeitaria.com.br</p>
+                <p>⏰ Ter - Dom: 09h às 19h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Confeitaria. Todos os direitos reservados. Desenvolvido por Raul Paulino.</p>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

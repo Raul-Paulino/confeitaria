@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confeitaria</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Folha de Estilos CSS -->
+    <link rel="stylesheet" href="static/css/estilo.css">
+    <!-- Ícone da Aba do Navegador (Favicon) -->
+<link rel="icon" type="image/png" href="static/img/logo-header.png">
+</head>
+<body>
+
+    <!-- CABEÇALHO (HEADER) -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="static/img/logo-header.png" alt="Confeitaria">
+            </div>
+           <nav class="menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="sobre.html">A Confeitaria</a>
+
+    <!-- Dropdown 1: Bolos -->
+    <div class="dropdown">
+        <a href="#" class="dropdown-btn">Bolos ▾</a>
+        <div class="dropdown-content">
+            <a href="#">Bolos de Aniversário</a>
+            <a href="#">Bolos Caseiros</a>
+            <a href="#">Rocamboles</a>
+        </div>
+    </div>
+
+    <!-- Dropdown 2: Tortas -->
+    <div class="dropdown">
+        <a href="#" class="dropdown-btn">Tortas ▾</a>
+        <div class="dropdown-content">
+            <a href="#">Torta de Ricota</a>
+            <a href="#">Torta de Holandesa</a>
+            <a href="#">Torta de Limão</a>
+            <a href="#">Torta de Chocolate</a>
+        </div>
+    </div>
+
+    <!-- Dropdown 3: Sobremesas -->
+    <div class="dropdown">
+        <a href="#" class="dropdown-btn">Sobremesas ▾</a>
+        <div class="dropdown-content">
+            <a href="#">Pudins</a>
+            <a href="#">Mousses</a>
+            <a href="#">Pavês</a>
+            <a href="#">Taças Especiais</a>
+        </div>
+    </div>
+
+    <!-- Dropdown 4: Outros -->
+    <div class="dropdown">
+        <a href="#" class="dropdown-btn">Outros ▾</a>
+        <div class="dropdown-content">
+            <a href="#">Trufas & Bombons</a>
+            <a href="#">Donuts</a>
+            <a href="#">Docinhos de Festa</a>
+            <a href="#">Kits Presente</a>
+        </div>
+    </div>
+</nav>
+            <div class="header-right">
+                <a href="produtos.html" class="btn-produtos">Nossos produtos ▸</a>
+                <div class="icones-topo">
+                    <img src="static/img/lupa.svg" alt="Pesquisar">
+                    <img src="static/img/carrinho.svg" alt="Carrinho">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO (BANNER PRINCIPAL) -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-texto">
+                <span class="badge">Tradição, sabor e qualidade!</span>
+                <h1>CONFEITARIA</h1>
+                <p>Aqui, nos preocupamos em oferecer a você, a melhor experiência gastronômica. Cuidamos de cada detalhe para que você tenha o prazer de saborear uma sobremesa diferenciada. Conheça nossos diferenciais!</p>
+                <div class="hero-botoes">
+                    <a href="sobre.html" class="btn-laranja">Mais sobre a Confeitaria ▸</a>
+                    <a href="encomenda.html" class="btn-branco">Faça sua encomenda ▸</a>
+                </div>
+            </div>
+            <div class="hero-imagem">
+                <img src="static/img/banner-principal.jpg" alt="Fatia de bolo de chocolate com morango">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CARDS DE DIFERENCIAIS (4 BLOCOS DO TOPO) -->
+    <section class="diferenciais">
+        <div class="cards-container">
+            <div class="card-dif">
+                <img src="static/img/foto-do-ambiente.jpg" alt="Ambiente">
+                <p>Nosso ambiente é amplo e aconchegante, para você se deliciar com nossas sobremesas. Há ambientes abertos na área externa e com ar condicionado no salão principal.</p>
+            </div>
+            <div class="card-dif">
+                <img src="static/img/pessoa-servindo.jpg" alt="Atendimento">
+                <p>O cardápio é diversificado e rico em opções para atender todas as suas necessidades. Todos os produtos são feitos artesanalmente o que garante um sabor inigualável em nossas sobremesas.</p>
+            </div>
+            <div class="card-dif">
+                <img src="static/img/mãos-preparando-doces.jpg" alt="Produção artesanal">
+                <p>Todos os nossos doces, bolos e tortas são produzidos com ingredientes de altíssima qualidade, rigorosamente selecionados pelos nossos confeiteiros, garantindo um sabor diferenciado.</p>
+            </div>
+            <div class="card-dif">
+                <img src="static/img/cliente-sorrindo.jpg" alt="Experiência única">
+                <p>Produzimos tudo com muito cuidado para que você possa ter experiências únicas e emocionantes. Cada sobremesa tem um toque refinado, carinho e capricho em cada detalhe para te surpreender.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PRODUTOS -->
+    <section class="produtos-section">
+        <h2>NOSSOS PRODUTOS</h2>
+        <p class="subtitulo-produtos">A Confeitaria traz uma linha de produtos deliciosos, produzidos artesanalmente com ingredientes de alta qualidade, trazendo um sabor incomparável e garantindo uma experiência gastronômica única.</p>
+
+        <div class="grid-produtos">
+            <!-- Produto 1 -->
+            <div class="produto-card">
+                <img src="static/img/pudim.jpg" alt="Pudim">
+                <span class="tag-categoria">Sobremesas</span>
+                <h3>Pudins</h3>
+                <div class="preco">R$ 420,00</div>
+                <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="produto-card">
+                <img src="static/img/rocambole-1.jpg" alt="Rocambole Prestígio">
+                <span class="tag-categoria">Bolos e Especiais, Sobremesas</span>
+                <h3>Rocambole Prestígio</h3>
+                <div class="preco">R$ 980,00</div>
+                <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="produto-card">
+                <img src="static/img/rocambole-2.jpg" alt="Rocambole de Doce de Leite">
+                <span class="tag-categoria">Bolos e Especiais, Sobremesas</span>
+                <h3>Rocambole de Doce de Leite</h3>
+                <div class="preco">R$ 780,00</div>
+                <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="produto-card">
+                <img src="static/img/trufas.jpg" alt="Trufas">
+                <span class="tag-categoria">Chocolates</span>
+                <h3>Trufas</h3>
+                <div class="preco">R$ 500,00</div>
+                <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="produto-card">
+                <img src="static/img/bombons.jpg" alt="Bombons">
+                <span class="tag-categoria">Chocolates</span>
+                <h3>Bombons</h3>
+                <div class="preco">R$ 150,00</div>
+                <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="produto-card">
+                <img src="static/img/donuts.jpg" alt="Donuts">
+                <span class="tag-categoria">Doces</span>
+                <h3>Donuts</h3>
+                <div class="preco">R$ 450,00</div>
+                <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+
+            <!-- Produto 7 -->
+            <div class="produto-card">
+                <img src="static/img/doces.jpg" alt="Docinho de Festa">
+                <span class="tag-categoria">Doces</span>
+                <h3>Docinho de Festa</h3>
+                <div class="preco">R$ 1.200,00</div>
+                <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="produto-card">
+                <img src="static/img/torta-de-ricota.jpg" alt="Torta de Ricota">
+                <span class="tag-categoria">Tortas</span>
+                <h3>Torta de Ricota</h3>
+                <div class="preco">R$ 1.500,00</div>
+                <button class="btn-detalhes">Mais detalhes</button>
+            </div>
+        </div>
+
+        <div class="footer-produtos">
+            <a href="produtos.html" class="link-todos">Todos os produtos ▸</a>
+        </div>
+    </section>
+    
+    <!-- RODAPÉ (FOOTER) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>CONFEITARIA</h3>
+                <p>A melhor experiência em confeitaria artesanal. Tradição, qualidade e carinho em cada detalhe.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">A Confeitaria</a></li>
+                    <li><a href="#">Bolos</a></li>
+                    <li><a href="#">Tortas</a></li>
+                    <li><a href="#">Sobremesas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <p>📍 Av. Principal, 1000 - Centro</p>
+                <p>📞 (11) 99999-8888</p>
+                <p>✉️ contato@confeitaria.com.br</p>
+                <p>⏰ Ter - Dom: 09h às 19h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Confeitaria. Todos os direitos reservados. Desenvolvido por Raul Paulino.</p>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
